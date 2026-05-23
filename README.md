@@ -135,6 +135,23 @@ It uses Landlab to simulate landscape evolution on a 2-D raster grid. The simula
 
 The script also uses `FlowAccumulator` to compute drainage flow directions and drainage areas during terrain evolution. Each simulation starts from an initial sloped terrain with random noise. The bottom boundary is kept open as the outlet, while the left, right, and top boundaries are closed. This creates a mountain-to-sea drainage direction and allows ridge-valley structures to gradually form during the simulation.
 
+### `visualization.py`
+
+This script visualizes the generated dataset.
+
+It loads:
+
+```text
+datasets/all_z.npy
+```
+
+and creates visualization outputs for each simulation. For every simulation, it generates:
+
+-a 2-D terrain evolution GIF
+-a final-frame 3-D terrain surface plot
+
+The GIF shows how the terrain evolves over time, while the 3-D plot helps verify whether the generated terrain contains reasonable ridge, valley, mountain, and drainage structures.
+
 ## OpenSTL Setup
 This project depends on the SimVP implementation provided by [OpenSTL GitHub](https://github.com/chengtan9907/OpenSTL). The notebooks import SimVP using:
 ```text
