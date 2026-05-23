@@ -142,7 +142,7 @@ This script visualizes the generated dataset.
 It loads:
 
 ```text
-datasets/all_z.npy
+all_z.npy
 ```
 
 and creates visualization outputs for each simulation. For every simulation, it generates:
