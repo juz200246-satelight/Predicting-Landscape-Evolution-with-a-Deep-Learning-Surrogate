@@ -124,6 +124,24 @@ The dataset generation part contains two main scripts:
 generate_datasets.py
 visualization_datasets.py
 ```
+### `generate_datasets.py`
+
+This script generates the training dataset used by the SimVP model.
+
+It uses Landlab to simulate landscape evolution on a 2-D raster grid. The simulation considers both:
+
+- fluvial erosion, modeled using `FastscapeEroder`
+- hillslope diffusion, modeled using `LinearDiffuser`
+
+The script also uses `FlowAccumulator` to compute drainage flow directions and drainage areas during terrain evolution. Each simulation starts from an initial sloped terrain with random noise. The bottom boundary is kept open as the outlet, while the left, right, and top boundaries are closed. This creates a mountain-to-sea drainage direction and allows ridge-valley structures to gradually form during the simulation.
+
+The default dataset setting is:
+
+```text
+Number of simulations : 50 or 270, depending on the experiment
+Frames per simulation : 120
+Grid size             : 128 x 128
+Output shape          : (N_sim, 120, 128, 128)
 
 ## OpenSTL Setup
 This project depends on the SimVP implementation provided by [OpenSTL GitHub](https://github.com/chengtan9907/OpenSTL). The notebooks import SimVP using:
