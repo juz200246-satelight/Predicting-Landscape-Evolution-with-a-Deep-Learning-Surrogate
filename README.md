@@ -30,6 +30,8 @@ project/
 │
 └── OpenSTL/
     │
+    ├── generate_datasets.py
+    ├── visualization_datasets.py
     ├── all_z.npy
     ├── simvp_train_zonly_10to10.ipynb
     ├── simvp_verify.ipynb
