@@ -147,8 +147,8 @@ datasets/all_z.npy
 
 and creates visualization outputs for each simulation. For every simulation, it generates:
 
--a 2-D terrain evolution GIF
--a final-frame 3-D terrain surface plot
+- a 2-D terrain evolution GIF
+- a final-frame 3-D terrain surface plot
 
 The GIF shows how the terrain evolves over time, while the 3-D plot helps verify whether the generated terrain contains reasonable ridge, valley, mountain, and drainage structures.
 
