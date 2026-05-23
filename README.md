@@ -124,6 +124,7 @@ The dataset generation part contains two main scripts:
 ```text
 generate_datasets.py
 visualization_datasets.py
+```
 
 ## OpenSTL Setup
 This project depends on the SimVP implementation provided by [OpenSTL GitHub](https://github.com/chengtan9907/OpenSTL). The notebooks import SimVP using:
