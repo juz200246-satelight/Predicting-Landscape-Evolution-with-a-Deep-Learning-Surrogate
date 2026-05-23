@@ -115,7 +115,6 @@ It is mainly used for:
 - preparing figures for reports or presentations
 
 ## Dataset
-## Dataset
 
 The dataset used in this project is generated synthetically using a physics-based landscape evolution simulator. Instead of directly using real-world terrain data, we generate controlled simulation data so that the model can learn terrain evolution dynamics with known temporal consistency, fixed spatial resolution, and configurable physical parameters. Real-world terrain datasets are difficult to use for supervised forecasting because they usually do not provide dense, long-term frame-by-frame elevation evolution under controlled conditions. Therefore, synthetic data allows us to create many comparable terrain trajectories for training and evaluation.
 
