@@ -119,10 +119,10 @@ steven!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 ## OpenSTL Setup
-This project depends on the SimVP implementation provided by OpenSTL. The notebooks import SimVP using:
-
+This project depends on the SimVP implementation provided by [OpenSTL GitHub](https://github.com/chengtan9907/OpenSTL). The notebooks import SimVP using:
+```text
 from openstl.models import SimVP_Model
-
+```
 Therefore, OpenSTL must be available in the Python environment before running the training notebook.
 
 1. Clone this project
