@@ -10,6 +10,35 @@ This project formulates landscape evolution prediction as a spatiotemporal forec
 
 Numerical landscape evolution models are computationally expensive, especially when running many simulations over different physical parameters and initial conditions. This project explores whether a neural surrogate model can learn the dominant temporal dynamics of simulated terrain evolution and produce reliable long-horizon forecasts.
 
+### Results at a glance
+
+A comparison of the final predicted terrain and the full autoregressive rollout against the ground truth and a linear extrapolation baseline. The time-lapse images below are animated GIFs.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Ground Truth</th>
+      <th>SimVP</th>
+      <th>Baseline</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Final frame<br>Frame 119</th>
+      <td><img src="images/gt.png" alt="Ground truth terrain at frame 119" width="280"></td>
+      <td><img src="images/pred.png" alt="SimVP-predicted terrain at frame 119" width="280"></td>
+      <td><img src="images/bl.png" alt="Baseline-predicted terrain at frame 119" width="280"></td>
+    </tr>
+    <tr>
+      <th scope="row">Time-lapse<br>Frames 10–119</th>
+      <td><img src="images/gt.gif" alt="Animated ground truth terrain evolution from frames 10 to 119" width="280"></td>
+      <td><img src="images/pred.gif" alt="Animated SimVP terrain prediction from frames 10 to 119" width="280"></td>
+      <td><img src="images/bl.gif" alt="Animated baseline terrain prediction from frames 10 to 119" width="280"></td>
+    </tr>
+  </tbody>
+</table>
+
 The main model is trained in a **10-frame-to-10-frame** setting:
 
 ```text
