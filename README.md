@@ -26,15 +26,15 @@ A comparison of the final predicted terrain and the full autoregressive rollout 
   <tbody>
     <tr>
       <th scope="row">Final frame<br>Frame 119</th>
-      <td><img src="images/gt.png" alt="Ground truth terrain at frame 119" width="280"></td>
-      <td><img src="images/pred.png" alt="SimVP-predicted terrain at frame 119" width="280"></td>
-      <td><img src="images/bl.png" alt="Baseline-predicted terrain at frame 119" width="280"></td>
+      <td><img src="images/gt.png" alt="Ground truth terrain at frame 119" width="200"></td>
+      <td><img src="images/pred.png" alt="SimVP-predicted terrain at frame 119" width="200"></td>
+      <td><img src="images/bl.png" alt="Baseline-predicted terrain at frame 119" width="200"></td>
     </tr>
     <tr>
       <th scope="row">Time-lapse<br>Frames 10–119</th>
-      <td><img src="images/gt.gif" alt="Animated ground truth terrain evolution from frames 10 to 119" width="280"></td>
-      <td><img src="images/pred.gif" alt="Animated SimVP terrain prediction from frames 10 to 119" width="280"></td>
-      <td><img src="images/bl.gif" alt="Animated baseline terrain prediction from frames 10 to 119" width="280"></td>
+      <td><img src="images/gt.gif" alt="Animated ground truth terrain evolution from frames 10 to 119" width="200"></td>
+      <td><img src="images/pred.gif" alt="Animated SimVP terrain prediction from frames 10 to 119" width="200"></td>
+      <td><img src="images/bl.gif" alt="Animated baseline terrain prediction from frames 10 to 119" width="200"></td>
     </tr>
   </tbody>
 </table>
